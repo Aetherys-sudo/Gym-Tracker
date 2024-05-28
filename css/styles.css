@@ -1,0 +1,274 @@
+/*######################## GENERAL SETTINGS START ###########################*/
+
+:root {
+    --margin-val: 20px;
+    --nav-color: #404040;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Helvetica, sans-serif;
+
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    width: 100vw;
+    height: 100vh;
+}
+
+
+/*######################## GENERAL SETTINGS START ###########################*/
+
+
+/*######################## NAVIGATION START ###########################*/
+
+nav {
+    width: 15%;
+
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--nav-color);
+    min-width: 300px;
+
+}
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+
+    width: 100%;
+}
+
+nav > ul > li {
+    font-size: 1.15em;
+    width: 100%;
+    margin: 10px 0;
+    height: 40px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+
+nav > ul > li:hover > .small-symbol {
+    display: block;
+}
+
+.small-symbol {
+    width: 5px;
+    height: 100%;
+    background-color: #ccc;
+    display: none;
+}
+
+a {
+
+    text-decoration: none;
+    color: white;
+    display: flex;
+    align-items: center;
+    padding-left: 15px;
+    width: 100%;
+    height: 100%;
+    
+}
+
+a > i {
+    padding-right: 5px;
+}
+
+a:hover {
+    background-color: #515151;
+
+
+}
+
+.logo-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    width: 100%;
+    margin-bottom: 50px;
+}
+
+.logo-wrapper > p {
+    font-size: 1.5em;
+    color: white;
+
+    padding-left: var(--margin-val);
+}
+
+#logo {
+    object-fit: contain;
+    width: 100px;
+    height: 100px;
+    margin: 10px 0 10px var(--margin-val);
+    margin-left: -5px;
+}
+
+
+/*######################## NAVIGATION END ###########################*/
+
+
+/*######################## MAIN PANEL START ###########################*/
+.content-container {
+    height: 100vh;
+    width: 85%;
+    background-color: #f3f3f3;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.week-container {
+    width: 50%;
+    height: 65px;
+    background-color: white;
+    margin: 40px 0 20px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 1px 2px #e8e8e8;
+}
+
+.template-name {
+    padding: 0 0 5px 0;
+    width: 90%;
+    font-size: 0.80em;
+    color: gray;
+}
+
+.date-container {
+    font-weight: bold;
+}
+
+.row-week {
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    justify-content: space-between;
+    padding: 0 0 10px 0;
+}
+
+.exercise-container {
+    width: 50%;
+    height: auto;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 1px 2px #e8e8e8;
+}
+
+.row-exercise {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px;
+    width: 90%;
+}
+
+.exercise-title-container {
+    display: flex;
+    flex-direction: column;
+    padding: 0 0 30px 0;
+    width: 90%;
+}
+
+.table-container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 90%;
+}
+
+.table-display {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 0 10px;
+}
+
+th {
+    height: 40px;
+}
+
+td {
+    text-align: center;
+    height: 40px;
+}
+
+
+.bottom-border {
+    border-bottom: 1px solid lightgray;
+}
+
+.add-set {
+    width: 100px;
+    height: 30px;
+    margin: 10px 0 10px 0;
+    align-self: flex-end;
+    background-color: #fe3927;
+    color: white;
+    border: none;
+    font-weight: bold;
+
+}
+
+.add-set:hover {
+    background-color: #fe5b4c;
+}
+
+.menu-btn > i {
+    font-size: 17px;
+}
+
+.ellipsis {
+    margin-right: 5px;
+}
+
+.exercise-category-btn {
+    background-color: #fef6f4;
+    border: 2px solid #d89ea0;
+}
+
+.check {
+    display: none;
+}
+
+.exercise-category-btn {
+    color: #fe3927;
+    font-weight: bolder;
+    padding: 5px;
+}
+
+.exercise-category-btn:hover {
+    background-color: #f1dcdd;
+}
+
+
+.menu-btn {
+    border: none;
+    background-color: white;
+}
+
+.menu-btn:hover {
+    color: red;
+
+} 
+
+.table-input {
+    width: 50px;
+    height: 20px;
+    text-align: center;
+}
+
+input[type=number]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+  }

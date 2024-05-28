@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../css/styles.css">
+        <script src="https://kit.fontawesome.com/3a148ea568.js" crossorigin="anonymous"></script>
+        <title>Gym Tracker</title>
+    
+    </head>
+    <body>
+        <div class="flex-container">
+            <nav id="navigation">
+                <div class="logo-wrapper">
+                    <img id="logo" src="../res/logo1.png">
+                    <p>Gym Tracker</p>
+                </div>
+                <ul class="menu">
+                    <li><div class="small-symbol"></div><a id="home" href=""><i class="fa-solid fa-dumbbell"></i>Current Workout</a></li>
+                    <li><div class="small-symbol"></div><a id="home" href=""><i class="fa-solid fa-folder"></i>Mesocycles</a></li>
+                    <li><div class="small-symbol"></div><a id="home" href=""><i class="fa-solid fa-table-columns"></i>Templates</a></li>
+                    <li><div class="small-symbol"></div><a id="home" href=""><i class="fa-solid fa-table-columns"></i>Templates</a></li>
+                    <li><div class="small-symbol"></div><a id="home" href=""><i class="fa-solid fa-wrench"></i>Custom Exercises</a></li>
+                    <li><div class="small-symbol"></div><a id="home" href=""><i class="fa-solid fa-circle-plus"></i>Plan a new mesocycle</a></li>
+                </ul>
+                <div></div>
+            </nav>
+            <div class="content-container">
+                <div class="week-container">
+                    <span class="template-name">DEMO</span>
+                    <div class="row-week">
+                        <span class="date-container">WEEK 1 DAY 1 Monday</span>
+                        <button class="menu-btn"><i class="fa-regular fa-calendar"></i></button>
+                    </div>
+                </div>
+                <div class="exercise-container">
+                    <div class="row-exercise">
+                        <button class="exercise-category-btn">CHEST <i class="fa-solid fa-play play"></i><i class="fa-solid fa-circle-check check"></i></button>
+                        <button class="exercise-settings menu-btn ellipsis"><i class="fa-solid fa-ellipsis-vertical"></i></button>
+                    </div>
+                    <div class="exercise-title-container">
+                        <p class="exercise-name">BENCH PRESS</p>
+                        <p class="machine-used">BARBELL</p>
+                    </div>
+                    <div class="table-container">
+                        <table class="table-display">
+                            <tr>
+                                <th class="bottom-border">Sets</th>
+                                <th class="bottom-border">Weight</th>
+                                <th class="bottom-border">Reps</th>
+                            </tr>
+                            <tr>
+                                <td class="bottom-border">1</td>
+                                <td class="bottom-border"><input type="number" id="weight-ex-1" name="weight-ex-1" class="table-input"></td>
+                                <td class="bottom-border"><input type="number" id="rep-ex-1" name="rep-ex-1" class="table-input"></td>
+                            </tr>
+                            <tr>
+                                <td class="bottom-border">1</td>
+                                <td class="bottom-border">80</td>
+                                <td class="bottom-border">12</td>
+                            </tr>
+                        </table>
+                        <button class="add-set">ADD SET</button>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
